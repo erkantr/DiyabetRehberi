@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FoodAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gallery"/>
+
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputName"
+            style="@style/parent"
+            android:layout_marginTop="50dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName"
+                style="@style/modifiedEditText"
+                android:hint="Yemek Adı"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputBirim1"
+            style="@style/parent"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBirim1"
+                style="@style/modifiedEditText"
+                android:hint="Birim 1"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputBirim2"
+            style="@style/parent"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBirim2"
+                style="@style/modifiedEditText"
+                android:hint="Birim 2"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputBirim1deger"
+            style="@style/parent"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBirim1deger"
+                style="@style/modifiedEditText"
+                android:hint="Birim 1 Kalori Değeri"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputBirim2deger"
+            style="@style/parent"
+            android:layout_marginTop="20dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBirim2deger"
+                style="@style/modifiedEditText"
+                android:hint="Birim 2 Kalori Değeri"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/add"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="Ekle" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            app:mbn_shadowColor="@color/main"
+            app:mbn_backgroundBottomColor="@color/white"
+            app:mbn_circleColor="@color/main"
+            app:mbn_countBackgroundColor="@color/main1"
+            app:mbn_countTextColor="@color/main"
+            app:mbn_defaultIconColor="@color/main"
+            app:mbn_selectedIconColor="@color/white">
+
+        </com.etebarian.meowbottomnavigation.MeowBottomNavigation>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Calculation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+    <TextView
+        android:text="Kan Şekeri*"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/kan"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Hedef Kan Şekeri*"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/hedef_kan"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="İnsülin Duyarlılık Faktörü*"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/duyarlilik"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Karbonhidrat Miktarı*"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/karbonhidrat"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="İnsülin/Karbonhidrat Oranı*"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/oran"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:text="Et Gramajı"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_design"
+        android:layout_height="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Yağlı Öğün"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <Switch
+                android:id="@+id/yag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:text="Zorunlu alanlar * ile işaretlenmiştir"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/hesapla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_style"
+        android:text="Hesapla"
+        android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

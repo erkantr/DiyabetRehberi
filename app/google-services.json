@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1068878070339",
+    "project_id": "diyabet-rehberi",
+    "storage_bucket": "diyabet-rehberi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068878070339:android:83cc09caf651e3a7d44af6",
+        "android_client_info": {
+          "package_name": "com.bysoftware.diyabetrehberi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068878070339-c9dc6jrk5ij2csmri5toield7fos5c30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bysoftware.diyabetrehberi",
+            "certificate_hash": "bab6bd307a420ab83bc34fac787ece6400da91d1"
+          }
+        },
+        {
+          "client_id": "1068878070339-5guc9j4g88ib1glmu2vginqag5j53bib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAK5lr98Nqvx51CJvxiHyNLc7FPf9OeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068878070339-5guc9j4g88ib1glmu2vginqag5j53bib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
